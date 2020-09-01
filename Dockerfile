@@ -54,6 +54,11 @@ RUN chown -R gpadmin:gpadmin /home/gpadmin
 COPY gpdb.deb gpdb.deb
 
 RUN apt install /home/gpadmin/gpdb.deb
+RUN rm /home/gpadmin/gpdb.deb
+
+RUN mkdir -p /data/gpmaster /data/gpdata1 /data/gpdata2
+RUN chown -R gpadmin:gpadmin /data
+
 RUN chown -R gpadmin:gpadmin /usr/local/greenplum*
 RUN locale-gen "en_US.UTF-8"
 RUN service ssh start && su gpadmin bash -l -c "/home/gpadmin/start.sh"
@@ -65,4 +70,3 @@ RUN echo $(whoami)
 RUN echo $(cat hostlist_singlenode)
 
 EXPOSE 5432
-RUN rm /home/gpadmin/gpdb.deb

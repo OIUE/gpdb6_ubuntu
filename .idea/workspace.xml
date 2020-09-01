@@ -4,7 +4,9 @@
     <list default="true" id="23dfcf7d-3e26-4cfb-818d-efe4a199429a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash/.gpadmin_bash_profile" beforeDir="false" afterPath="$PROJECT_DIR$/bash/.gpadmin_bash_profile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bash/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bash/start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpdb/gpinitsystem_singlenode" beforeDir="false" afterPath="$PROJECT_DIR$/gpdb/gpinitsystem_singlenode" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
       <updated>1598882751490</updated>
       <workItem from="1598882752522" duration="3805000" />
       <workItem from="1598948463787" duration="11799000" />
-      <workItem from="1598966314690" duration="6496000" />
+      <workItem from="1598966314690" duration="8175000" />
     </task>
     <servers />
   </component>
@@ -60,5 +62,9 @@
       <screen x="2160" y="0" width="1920" height="1200" />
     </state>
     <state x="2804" y="301" key="FileChooserDialogImpl/0.41.2160.1399/2160.0.1920.1200@2160.0.1920.1200" timestamp="1598962902086" />
+    <state x="2720" y="274" width="800" height="652" key="find.popup" timestamp="1598976067346">
+      <screen x="2160" y="0" width="1920" height="1200" />
+    </state>
+    <state x="2720" y="274" width="800" height="652" key="find.popup/0.41.2160.1399/2160.0.1920.1200@2160.0.1920.1200" timestamp="1598976067346" />
   </component>
 </project>

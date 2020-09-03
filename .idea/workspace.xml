@@ -4,9 +4,7 @@
     <list default="true" id="23dfcf7d-3e26-4cfb-818d-efe4a199429a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bash/.gpadmin_bash_profile" beforeDir="false" afterPath="$PROJECT_DIR$/bash/.gpadmin_bash_profile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bash/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bash/start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gpdb/gpinitsystem_singlenode" beforeDir="false" afterPath="$PROJECT_DIR$/gpdb/gpinitsystem_singlenode" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,11 @@
       <updated>1598882751490</updated>
       <workItem from="1598882752522" duration="3805000" />
       <workItem from="1598948463787" duration="11799000" />
-      <workItem from="1598966314690" duration="8175000" />
+      <workItem from="1598966314690" duration="8435000" />
+      <workItem from="1598994811318" duration="3086000" />
+      <workItem from="1599032631114" duration="622000" />
+      <workItem from="1599125645297" duration="2176000" />
+      <workItem from="1599168317222" duration="339000" />
     </task>
     <servers />
   </component>

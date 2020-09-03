@@ -10,4 +10,4 @@ cat hostlist_singlenode
 gpssh-exkeys -f hostlist_singlenode
 
 gpinitsystem -ac gpinitsystem_singlenode
-echo "host all  all 0.0.0.0/0 trust" >> /data/gpmaster/gpsne-1/pg_hba.conf
+#echo "host all  all 0.0.0.0/0 trust" >> /data/gpmaster/gpsne-1/pg_hba.conf

@@ -2,6 +2,7 @@ FROM ubuntu:18.04
 
 # deb-package from https://github.com/greenplum-db/gpdb/releases
 # linux commands from:
+# https://github.com/greenplum-db/gpdb/blob/master/src/tools/docker/ubuntu16_ppa/README.md
 # https://github.com/kevinmtrowbridge/greenplumdb_singlenode_docker/blob/master/Dockerfile
 # https://github.com/greenplum-db/gpdb/blob/master/src/tools/docker/ubuntu/Dockerfile
 # https://github.com/DataGrip/docker-env/blob/master/greenplum/6.8/Dockerfile
@@ -61,7 +62,7 @@ RUN chown -R gpadmin:gpadmin /data
 
 RUN chown -R gpadmin:gpadmin /usr/local/greenplum*
 RUN locale-gen "en_US.UTF-8"
-RUN service ssh start && su gpadmin bash -l -c "/home/gpadmin/start.sh"
+RUN service ssh start && su gpadmin bash -l -c "/home/gpadmin/start.sh" || /bin/true
 
 
 RUN echo $(ls -1 /home/gpadmin)
@@ -70,3 +71,6 @@ RUN echo $(whoami)
 RUN echo $(cat hostlist_singlenode)
 
 EXPOSE 5432
+
+CMD tail -f /dev/null
+#CMD service ssh start && su gpadmin bash -l -c "gpstart -a --verbose" && sleep 2678400 # HACK: it's difficult to get Docker to attach to the GPDB process(es) ... so, instead attach to process "sleep for 1 month"

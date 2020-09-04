@@ -1,2 +1,0 @@
-export MASTER_DATA_DIRECTORY="/data/gpmaster/gpsne-1"
-source /usr/local/greenplum-db/greenplum_path.sh

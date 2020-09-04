@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="23dfcf7d-3e26-4cfb-818d-efe4a199429a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bash/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bash/start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash/.gpadmin_bash_profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash/start.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpdb.deb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpdb/gpinitsystem_singlenode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpdb/hostlist_singlenode" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gpdb6_test/Dockerfile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gpdb_data_grip/greenplum/6.8" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -33,6 +55,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -48,25 +75,39 @@
       <workItem from="1598994811318" duration="3086000" />
       <workItem from="1599032631114" duration="622000" />
       <workItem from="1599125645297" duration="2176000" />
-      <workItem from="1599168317222" duration="339000" />
+      <workItem from="1599168317222" duration="2919000" />
+      <workItem from="1599206438024" duration="7610000" />
+      <workItem from="1599220197417" duration="6858000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="2654" y="383" width="1141" height="441" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598961097697">
+    <state x="2654" y="383" width="1141" height="441" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599219916112">
       <screen x="2160" y="0" width="1920" height="1200" />
     </state>
-    <state x="2654" y="383" width="1141" height="441" key="#com.intellij.fileTypes.FileTypeChooser/0.41.2160.1399/2160.0.1920.1200@2160.0.1920.1200" timestamp="1598961097697" />
-    <state x="2804" y="301" key="FileChooserDialogImpl" timestamp="1598962902086">
+    <state x="2654" y="383" width="1141" height="441" key="#com.intellij.fileTypes.FileTypeChooser/0.41.2160.1399/2160.0.1920.1200@2160.0.1920.1200" timestamp="1599219916112" />
+    <state x="556" y="488" key="#com.intellij.fileTypes.FileTypeChooser/0.41.2160.1399@0.41.2160.1399" timestamp="1599168975971" />
+    <state x="2804" y="301" key="FileChooserDialogImpl" timestamp="1599226896701">
       <screen x="2160" y="0" width="1920" height="1200" />
     </state>
-    <state x="2804" y="301" key="FileChooserDialogImpl/0.41.2160.1399/2160.0.1920.1200@2160.0.1920.1200" timestamp="1598962902086" />
-    <state x="2720" y="274" width="800" height="652" key="find.popup" timestamp="1598976067346">
+    <state x="2804" y="301" key="FileChooserDialogImpl/0.41.2160.1399/2160.0.1920.1200@2160.0.1920.1200" timestamp="1599226896701" />
+    <state x="2720" y="274" width="800" height="688" key="find.popup" timestamp="1599227594532">
       <screen x="2160" y="0" width="1920" height="1200" />
     </state>
-    <state x="2720" y="274" width="800" height="652" key="find.popup/0.41.2160.1399/2160.0.1920.1200@2160.0.1920.1200" timestamp="1598976067346" />
+    <state x="2720" y="274" width="800" height="688" key="find.popup/0.41.2160.1399/2160.0.1920.1200@2160.0.1920.1200" timestamp="1599227594532" />
   </component>
 </project>

@@ -13,21 +13,10 @@ RUN apt-get update \
   && apt-get update \
   && apt-get install -y greenplum-db
 
-# Create GreenPlum data folders and copy/edit configuration to use a single node
-RUN mkdir /data \
- && mkdir /data/data1 \
- && mkdir /data/data2 \
- && mkdir /data/master \
- && ls -al /opt/ \
- && . /opt/greenplum-db-6.8.1/greenplum_path.sh && cp $GPHOME/docs/cli_help/gpconfigs/gpinitsystem_singlenode /data/ \
- && sed -i 's/gpdata1/data\/data1/g' /data/gpinitsystem_singlenode \
- && sed -i 's/gpdata2/data\/data2/g' /data/gpinitsystem_singlenode \
- && sed -i 's/gpmaster/data\/master/g' /data/gpinitsystem_singlenode
-
-#COPY .bash_profile /home/gpadmin/.bash_profile
+VOLUME /data
 
 # Create gpadmin user and add the user to the sudoers
-RUN useradd -md /home/gpadmin/ gpadmin \
+RUN useradd -md /home/gpadmin/ -s /bin/bash gpadmin \
  && chown gpadmin -R /data \
  && echo "source /opt/greenplum-db-6.8.1/greenplum_path.sh" > /home/gpadmin/.bash_profile \
  && chown gpadmin:gpadmin /home/gpadmin/.bash_profile \

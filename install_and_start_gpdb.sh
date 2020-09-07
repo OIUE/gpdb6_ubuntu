@@ -14,6 +14,13 @@ ssh-keygen -f /home/gpadmin/.ssh/id_rsa -t rsa -N ""
 echo "==== SOURCE PROFILE"
 source /home/gpadmin/.bash_profile
 
+echo "==== PREPARE FOLDERS AND CONFIGS"
+
+cp $GPHOME/docs/cli_help/gpconfigs/gpinitsystem_singlenode /data/gpinitsystem_singlenode
+sed -i 's/gpdata1/data\/data1/g' /data/gpinitsystem_singlenode
+sed -i 's/gpdata2/data\/data2/g' /data/gpinitsystem_singlenode
+sed -i 's/gpmaster/data\/master/g' /data/gpinitsystem_singlenode
+
 echo "==== HOSTNAME TO SINGLENODE"
 echo `hostname` > /data/hostlist_singlenode
 sed -i 's/hostname_of_machine/`hostname`/g' /data/gpinitsystem_singlenode

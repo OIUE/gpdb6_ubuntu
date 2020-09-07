@@ -5,7 +5,10 @@ services:
       container_name: greenplum_6.8
       ports:
         - "54305:5432"
-      image: gpdb6_test:5
+      # image: gpdb6_test:11
+      build: .
+      volumes:
+        - /home/timon/gpdb_data:/data
       privileged: true
       hostname: greenplum_6.8.1
       security_opt:

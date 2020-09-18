@@ -15,10 +15,13 @@ RUN apt-get update \
 
 VOLUME /data
 
+COPY .bash_profile .bash_profile
+
 # Create gpadmin user and add the user to the sudoers
 RUN useradd -md /home/gpadmin/ -s /bin/bash gpadmin \
  && chown gpadmin -R /data \
- && echo "source /opt/greenplum-db-6.8.1/greenplum_path.sh" > /home/gpadmin/.bash_profile \
+ && cp .bash_profile /home/gpadmin/.bash_profile \
+ && rm .bash_profile \
  && chown gpadmin:gpadmin /home/gpadmin/.bash_profile \
  && su - gpadmin bash -c 'mkdir /home/gpadmin/.ssh' \
  && echo "gpadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers \
